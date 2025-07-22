@@ -13,12 +13,12 @@ export const postReducer = (state = initialState, action) => {
                 loading: true,
 
             };
-            
+
         case 'FETCH_POSTS_SUCCESS':
             return{
                 ...state,
                 loading: false,
-                posts: action.payload,
+                post: action.payload,
             };
 
         case 'FETCH_POSTS_FAILURE':
